@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn" style="height: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+    <title>灯谜题目</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Phpop.css" />
+    <script type="text/javascript" src="js/Phpop.js" ></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+				var ite = $(":radio:checked"); 
+				var le=ite.length; 
+				if(le==1){
+					$('#btn').attr('disabled',"disabled");
+				}
+    		$("form p").click(function(){
+    			var item = $(":radio:checked"); 
+					var len=item.length; 
+					len +=1;
+					if(len==2){ 
+					  $("form p span img").attr("src","images/wxuanzhong.png");
+		    		$(this).find("span img").attr("src","images/xuanzong.png"); 
+		    		$("#btn").click(function(){
+		    			absm2("网络加载失败")
+		    			var str = $("#btn img")[0].src;
+		    			var nav_text=str.substr(str.length-11,11);
+		    			var unm = parseInt($(".tishu span").html());
+		    			if(unm != 5){
+		    				if(nav_text == "queding.png"){
+					    			$("p i").css("display","inline-block");
+			    					$("#btn img").attr("src","images/xiayiti.png");
+			    			}else if(nav_text == "xiayiti.png"){
+			    				$("p i").css("display","none");
+			    				$("#btn img").attr("src","images/queding.png");
+			    				$(".tishu span").html(unm+1);
+			    			}
+		    			}else{
+		    				$("#btn img").attr("src","images/ytijiao.png");
+		    			}
+		    		});
+					}
+    		});
+    	});
+    </script>
+</head>
+<body style="height: 100%;">
+	<div class="card">
+		<div class="incard">
+			<div class="txt">
+				1.圆圆脸儿像苹果，又酸又甜营养多，既能做菜吃，又可当水果？
+			</div>
+			<form>
+			  <p><span><input type="radio" name="list" checked="" /><img src="images/wxuanzhong.png"></span>苹果<i><img src="images/yes.png"></i></p>
+			  <p><span><input type="radio" name="list" checked="" /><img src="images/wxuanzhong.png"></span>番茄<i><img src="images/yes.png"></i></p>
+			  <p><span><input type="radio" name="list" checked="" /><img src="images/wxuanzhong.png"></span>石榴<i><img src="images/yes.png"></i></p>
+			  <div class="lekc"><a href="javascript:;" id="btn"><img src="images/queding.png"/></a></div>
+			</form>
+		</div>
+		<div class="tishu"><span>1</span>/5</div>
+	</div>
+	
+</body>
+</html>

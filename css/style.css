@@ -1,0 +1,41 @@
+/*ss重置样式  */
+body,div,i,a,p,span,b,input,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dd,dt,textarea,img{margin:0;padding:0;}
+body{font-family: microsoft yahei;color:#333;}
+i,b{font-style: normal;}
+a{text-decoration:none;}
+img{vertical-align:top;width: 100%;}
+input,textarea,select,textarea,img,a,button{resize: none;outline: none;border: none;}
+li{list-style: none}
+button{background:transparent;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+.clearfix:after{content: '';display: block;height:0;clear: both;font-size:0;*zoom:1}
+
+#index{position: relative;}
+#index .share{position: absolute;right:1%;top:0.5%;font-size: 12px;color: #d01119;font-weight: bold;}
+#index .rt{position:absolute;display:block;width: 36%;height:6.5%;left:32%;bottom:28%;color:#fff;text-align:center;font-size:1.3rem;}
+#index .rules{position: absolute;display: block;width: 36%;height:6.5%;left: 32%;bottom: 16%;}
+
+.participate{position: relative;}
+.participate .can{position: absolute;display: block;width: 36%;height: 7%;left: 32%;bottom: 28%;}
+.participate .guize{position: absolute;display: block;width: 36%;height: 7%;left: 32%;bottom: 16.5%;}
+
+.card{background: url(../images/mi.jpg) no-repeat;height:100%;width:100%;background-size:cover;position:relative;}
+.card .incard{color: #cb1919;padding:23% 12% 0;}
+.card .incard .txt{font-size:16px;line-height:25px;margin-bottom:10%;letter-spacing:3px;}
+input{margin-bottom: 25px;}
+.card .incard p{margin-bottom:10%;position:relative;}
+.card .incard p span{float:left;width:6%;height:18px;overflow:hidden;margin-top:3px;margin-right:5px;}
+.card .incard p input{float:left;margin-left:-21px;}
+.card .incard p a{display:block;}
+.card .incard p i{display:none;margin-left:10px;width:6%;}
+.card .incard p i img{margin-top:5px;}
+.card .tishu{position:absolute;left:50%;bottom:12%;width:30px;margin-left:-15px;font-size:18px;font-weight:bold;color:#cb1919;}
+.card .incard .lekc{padding:0;display:block;margin-top:35%;}
+.card .incard .lekc a{display:block;}
+
+.rules{position: relative;}
+.rules .rumid{position: absolute;left: 13%;top:20%;width: 80%;letter-spacing: 3px;font-family: 黑体;padding-top: 4%;}
+.rules .rumid p{color: #cb1919;font-size: 16px;line-height: 20px;margin-top: 15px;}
+.rules a{position: absolute;left: 47%;bottom:20%;margin-left:-84px;display: block;margin-right: 21%;}
+
+
